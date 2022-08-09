@@ -21,10 +21,10 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if (edad > 18) {
-    console.log("Allowed")
+    return "Allowed"
   }
   else {
-    console.log("Not allowed")
+    return "Not Allowed"
   }
 }
   
@@ -35,13 +35,13 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   if (status == "1") {
-    console.log ("Online");
+    return "Online"
   }
   else if (status == 2) {
-    console.log ("Away");
+    return "Away"
   }
   else {
-    console.log ("Offline");
+    return "Offline"
   }
 }
 
@@ -53,16 +53,16 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if (idioma === "aleman"){
-    console.log ("Guten Tag!");
+    return "Guten Tag!"
   }
   else if (idioma === "mandarin"){
-    console.log ("Ni Hao!");
+    return "Ni Hao!"
   }
   else if (idioma === "ingles"){
-    console.log ("Hello!");
+    return "Hello!"
   }
   else {
-    console.log ("Hola!");
+    return "Hola!"
   }
 }
 
